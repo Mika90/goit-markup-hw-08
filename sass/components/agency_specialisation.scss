@@ -1,0 +1,34 @@
+.specialisation {
+  display: none;
+  @extend %container;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    font-size: $font-smaller;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__element {
+    position: relative;
+  }
+}
+
+@media (min-width: $tablet) {
+  .specialisation {
+    display: block;
+  }
+}

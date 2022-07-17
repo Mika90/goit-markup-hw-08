@@ -1,0 +1,40 @@
+@import "utils/variables";
+@import "components/sources";
+@import "components/modal";
+@import "components/social";
+@import "components/contact-form";
+@import "components/newsletter-form";
+@import "components/portfolio-navigation";
+@import "components/portfolio-list";
+@import "components/header";
+@import "components/footer";
+@import "components/agency_title";
+@import "components/agency_lorem_ipsum";
+@import "components/agency_specialisation";
+@import "components/agency_team";
+@import "components/agency_clients";
+
+body {
+  font-family: "RobotoRegular 400", "RobotoMedium 500", "RobotoBold 700", "RobotoBlack 900", sans-serif;
+  color: #212121;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}

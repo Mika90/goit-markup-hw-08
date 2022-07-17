@@ -1,0 +1,55 @@
+.lorem-ipsum {
+  @extend %container;
+  padding-top: $section-padding;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__element {
+    width: calc(100% - 15px);
+    display: inline-block;
+  }
+
+  &__icon {
+    $icon-size: 70px;
+    width: $icon-size;
+    height: $icon-size;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: $font-smaller;
+    color: $color-light-text;
+    margin-bottom: 30px;
+  }
+
+  &__image-box {
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: $color-light-background;
+  }
+}
+
+@media (min-width: $phone) {
+  .lorem-ipsum {
+    &__list {
+      justify-content: space-between;
+    }
+
+    &__text {
+      white-space: pre;
+    }
+  }
+}

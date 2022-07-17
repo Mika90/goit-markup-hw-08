@@ -1,0 +1,74 @@
+.contact-form {
+  padding-right: 40px;
+  padding-left: 40px;
+
+  &__data {
+    font-size: 12px;
+    display: block;
+    color: $color-light-text;
+  }
+
+  &__icon {
+    $icon-size: 12px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: $icon-size;
+    height: $icon-size;
+    fill: #212121;
+  }
+
+  &__data-window {
+    border-radius: $border-radius;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    border: getBorder(rgba(33, 33, 33, 0.2));
+  }
+
+  &__element {
+    position: relative;
+  }
+
+  &__checkbox {
+    border-radius: $border-radius;
+    width: 16px;
+    height: 15px;
+    margin-left: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__privacy {
+    font-size: 14px;
+    color: $color-light-text;
+  }
+
+  &__privacy-link {
+    color: rgba(33, 150, 243, 1);
+  }
+
+  &__button {
+    border-radius: $border-radius;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-color: transparent;
+    background: $color-active;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__button-box {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.contact-form__data-window.contact-form__comment {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 25px;
+  padding-top: 12px;
+  padding-left: 16px;
+  resize: none;
+}

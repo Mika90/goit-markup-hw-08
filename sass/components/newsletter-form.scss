@@ -1,0 +1,41 @@
+.newsletter-form {
+
+  &__email-label {
+    @extend .footer__section-title;
+    display: block;
+  }
+
+  &__email-input {
+    border-radius: $border-radius;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: white;
+    border: getBorder(rgba(255, 255, 255, 0.3));
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+
+  &__button {
+    @extend %button-active;
+    font-weight: $font-weight-biggest;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    border-color: transparent;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__button-icon {
+    $icon-size: 24px;
+    width: $icon-size;
+    height: $icon-size;
+    margin-left: 24px;
+    background-color: transparent;
+    fill: white;
+  }
+
+}

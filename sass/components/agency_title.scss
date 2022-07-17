@@ -1,0 +1,31 @@
+.page-title {
+  @extend %dark-section;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
+
+  &__container {
+    @extend %container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__order-button {
+    @extend %button-active;
+    border-radius: $border-radius;
+    font-size: $font-default;
+    padding: 10px 41px 10px 42px;
+  }
+
+  &__title {
+    font-size: 44px;
+    text-align: center;
+  }
+}

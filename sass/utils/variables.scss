@@ -1,0 +1,31 @@
+//KOLORY
+$color-dark-background: #2F303A;
+$color-light-background: #F5F4FA;
+$color-active: #2196F3;
+$color-light-text: #757575;
+
+//ODSTĘPY I ROZMIARY
+$min-width: 320px;
+$phone: 480px;
+$tablet: 760px;
+$computer: 1200px;
+$line-height-big: 1.17;
+$section-padding: 60px;
+$border-radius: 4px;
+
+//CZCIONKI - ROZMIARY
+$font-default: 16px;
+$font-smaller: 14px;
+$font-weight-default: 400;
+$font-weight-bigger: 500;
+$font-weight-biggest: 700;
+
+//FUNKCJE
+@function getBorder($color) {
+  @return 1px solid $color;
+}
+
+//INNE ROZMIARY
+@media (min-width: $tablet) {
+  $section-padding: 94px;
+}

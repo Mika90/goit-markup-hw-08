@@ -1,0 +1,63 @@
+.portfolio {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__list-element {
+    @extend %animated;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    transition-property: border-color;
+    border: getBorder(#EEE);
+
+    &:hover, &:focus {
+      @extend %animated;
+      cursor: pointer;
+      transition-property: border-color;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__description-box {
+    padding: 20px 24px;
+  }
+
+  &__roll-up {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__pop-it {
+    @extend %animated;
+    font-size: 18px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    padding-top: 49px;
+    padding-right: 24px;
+    padding-left: 24px;
+    transition-property: transform;
+    transform: translateY(100%);
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 0.9);
+  }
+
+  &__list-element:hover &__pop-it {
+    @extend %animated;
+    transition-property: transform;
+    transform: translateY(0);
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: $font-weight-biggest;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 206px;
+
+  &__icon {
+    $icon-size: 20px;
+    @extend %animated;
+    width: $icon-size;
+    height: $icon-size;
+    transition-property: fill;
+    fill: #AFB1B8;
+  }
+
+  &__icon-box {
+    $icon-size: 44px;
+    @extend %animated;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: $icon-size;
+    height: $icon-size;
+    transition-property: background-color;
+    border-radius: 50%;
+
+    &:hover, &:focus {
+      @extend %animated;
+      cursor: pointer;
+      transition-property: background-color;
+      background-color: $color-active;
+
+      .social__icon {
+        @extend %animated;
+        transition-property: fill;
+        fill: white;
+      }
+    }
+  }
+}

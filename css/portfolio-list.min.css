@@ -1,0 +1,18 @@
+/* Error: The target selector was not found.
+ * Use "@extend %inline-block !optional" to avoid this error.
+ *   ,
+ * 9 |     @extend %inline-block;
+ *   |     ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   portfolio-list.scss 9:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend %inline-block !optional" to avoid this error.\a   \2577 \a 9 \2502      @extend %inline-block;\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   portfolio-list.scss 9:5  root stylesheet';
+}
